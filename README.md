@@ -2,16 +2,16 @@
 
 The sample consists of three main files, along with one requirements file. In order to update the config file, please ensure to include the clientId and tenantId. To authenticate the application, the console application utilizes the deviceauth method, which requires user authentication via the Microsoft Devices page at [deviceauth](https://microsoft.com/devicelogin). For detailed instructions on setting up the Microsoft Entra Application, please refer to this [link](https://learn.microsoft.com/en-us/graph/tutorials/python?tabs=aad&tutorial-step=1).
 
-### Config values
+### config.cfg
 
 ```
 [azure]
 clientId = *****************************
 tenantId = *****************************
-graphUserScopes = User.Read Mail.Read Mail.Send UserActivity.ReadWrite.CreatedByApp User.ReadBasic.All
+graphUserScopes = User.Read Mail.Read Mail.Send UserActivity.ReadWrite.CreatedByApp
 ```
 
-### Requirements.txt
+### requirements.txt
 ```
 azure-identity
 msgraph-sdk
